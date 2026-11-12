@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/34769348/README.md)# macOS app-local toolchain
+# macOS app-local toolchain
 
 On a supported Mac, double-click `launch-gui-macos.command` to open the patcher in Terminal. You can also run `bootstrap/macos/launch-gui-macos.sh` from Terminal. Both expect `eaglercraft-26.2-u2-patcher-gui.jar` in the package's top-level directory. The bootstrap installs Java 17, Java 25, Node.js 24 LTS, and npm under `.toolchain/`, then writes UTF-8 `toolchain.properties` beside the GUI JAR. The `npm` property points to Node's `npm-cli.js`.
 
@@ -9,4 +9,3 @@ Each install fetches current release metadata over HTTPS. Java archive URLs must
 This bootstrap installs build tools only. You must provide the official Minecraft 26.2 client JAR and the patcher's other authenticated inputs. It does not install Xcode tools, acquire media, grant redistribution rights, build the game, sign or notarize the package, or deploy it. Rights for the official JAR, media, and third-party materials remain separate requirements.
 
 To run the offline contract test on macOS or Linux, use `sh bootstrap/macos/test-bootstrap-macos.sh`. It uses fake vendor metadata and small fixture archives; it does not download real toolchains. Linux can check the shell contract with mocked `uname` and `sw_vers`, but cannot verify native macOS execution or archive compatibility. Test on a Mac before describing this launcher as tested on macOS.
-

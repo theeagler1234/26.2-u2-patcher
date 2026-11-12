@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34769193/README.md)
 # App-local toolchain bootstrap
 
 Platform launchers live here. Use `launch-gui-linux-x86_64.sh` on Linux,

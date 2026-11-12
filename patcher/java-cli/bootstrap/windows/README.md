@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34769236/README.md)
 # Windows x64 app-local toolchain
 
 Run `bootstrap/windows/eagler-patcher-windows-x86_64.cmd` from the package. It installs Java 17,
